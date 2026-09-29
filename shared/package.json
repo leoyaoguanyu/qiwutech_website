@@ -1,0 +1,10 @@
+{
+  "name": "@inspireomni/shared",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "前后端共用的常量与校验规则",
+  "exports": {
+    ".": "./src/index.js"
+  }
+}

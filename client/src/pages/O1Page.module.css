@@ -1,0 +1,46 @@
+.specs {
+  padding: 100px 0;
+  background: #fff;
+}
+
+.specGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.innovation {
+  padding: 100px 0;
+  background: var(--color-bg-soft);
+}
+
+.innovationList {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.demo {
+  padding: 100px 0;
+  background: #fff;
+}
+
+@media (max-width: 768px) {
+  .specs,
+  .innovation,
+  .demo {
+    padding: 70px 0;
+  }
+
+  .specGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .specGrid {
+    grid-template-columns: 1fr;
+  }
+}

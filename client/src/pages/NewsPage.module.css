@@ -1,0 +1,35 @@
+.articles {
+  padding: 60px 0;
+  background: var(--gradient-soft);
+  position: relative;
+}
+
+.articles::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.3), transparent);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}

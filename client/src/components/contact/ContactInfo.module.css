@@ -1,0 +1,37 @@
+.list {
+  font-style: normal;
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.icon {
+  flex-shrink: 0;
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  margin-top: 0.25rem;
+}
+
+.title {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-heading);
+}
+
+.value {
+  color: var(--color-muted);
+}
+
+.value a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.value a:hover {
+  color: var(--color-primary);
+}

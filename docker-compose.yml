@@ -1,0 +1,13 @@
+# 本地开发用 MongoDB（可选）。生产环境建议使用阿里云 ApsaraDB for MongoDB，见 docs/DEPLOYMENT.md
+services:
+  mongo:
+    image: mongo:7
+    container_name: inspireomni-mongo
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:

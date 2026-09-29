@@ -1,0 +1,103 @@
+.intro {
+  padding: 120px 0 80px;
+  background: var(--gradient-soft);
+}
+
+.introText {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.introHeader {
+  margin-bottom: 0;
+}
+
+.paragraphs p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--color-body);
+  margin-bottom: 20px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 40px;
+}
+
+.team,
+.planning {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.card {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  padding: 60px 40px;
+  box-shadow: var(--shadow-card);
+  text-align: center;
+}
+
+.pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.tech,
+.mission {
+  padding: 80px 0;
+  background: var(--gradient-soft);
+}
+
+.techGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.valueCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+@media (max-width: 1024px) {
+  .techGrid,
+  .valueCards {
+    grid-template-columns: 1fr;
+  }
+
+  .valueCards {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro {
+    padding: 100px 0 60px;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .pillars {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .card {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .paragraphs p {
+    font-size: 1rem;
+  }
+}

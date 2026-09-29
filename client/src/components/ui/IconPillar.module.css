@@ -1,0 +1,49 @@
+.pillar {
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.pillar:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: var(--gradient-icon-soft);
+  color: var(--color-primary);
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.pillar:hover .icon {
+  background: var(--gradient-primary);
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-heading);
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 1rem;
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.1rem;
+  }
+}

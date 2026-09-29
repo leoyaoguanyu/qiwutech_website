@@ -1,0 +1,138 @@
+/* 特性介绍 */
+.features {
+  padding: 100px 0;
+  background: var(--color-bg-soft);
+}
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* 公司介绍 */
+.intro {
+  padding: 80px 0;
+  background: #f8f9fa;
+  overflow: hidden;
+}
+
+.introContent {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.introText {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.introTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--color-heading);
+  margin-bottom: 30px;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.introParagraphs {
+  margin-bottom: 40px;
+}
+
+.introParagraphs p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--color-body);
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.introImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.introImage img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.introImage img:hover {
+  transform: scale(1.02);
+}
+
+/* 新闻动态 */
+.news {
+  padding: 80px 0;
+  background: var(--color-dark);
+  color: #fff;
+  overflow: hidden;
+}
+
+.newsMore {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* 响应式 */
+@media (max-width: 1024px) {
+  .featureGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .introContent {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .introText {
+    padding-right: 0;
+  }
+
+  .introTitle {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .features {
+    padding: 70px 0;
+  }
+
+  .featureGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .intro {
+    padding: 60px 0;
+  }
+
+  .introTitle {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .introParagraphs p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .introTitle {
+    font-size: 1.5rem;
+  }
+
+  .introParagraphs p {
+    font-size: 0.95rem;
+  }
+}

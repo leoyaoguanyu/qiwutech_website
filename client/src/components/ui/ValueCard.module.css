@@ -1,0 +1,94 @@
+.card {
+  border-radius: var(--radius-lg);
+  padding: 40px 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.filled {
+  background: var(--gradient-primary);
+  color: #fff;
+}
+
+.filled::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+  pointer-events: none;
+}
+
+.plain {
+  background: #fff;
+  box-shadow: var(--shadow-card);
+  color: var(--color-body);
+}
+
+.icon,
+.title,
+.description,
+.points {
+  position: relative;
+  z-index: 1;
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+  font-size: 2rem;
+}
+
+.filled .icon {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.plain .icon {
+  background: var(--gradient-icon-soft);
+  color: var(--color-primary);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.plain .title {
+  color: var(--color-heading);
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.points li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+}
+
+.points svg {
+  flex-shrink: 0;
+  font-size: 0.9rem;
+}
+
+.plain .points svg {
+  color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 30px 20px;
+  }
+}
